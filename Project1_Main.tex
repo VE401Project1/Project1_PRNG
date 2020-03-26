@@ -21,15 +21,35 @@ Random numbers have a long history. In the acient world, dices are the most popu
 
 All mentioned above are true random numbers, which are taken from physical factors. In this way people can get perfect distributed random numbers. However, as people's need for random number increases, the disadvantages of true ones become obvious. They need extra hardwares and the generating speed is relatively slow since numbers should be taken from hardware values. Moreover, they are surely not reproducible. 
 
-For disadvantages above, the idea of pseudorandom numbers are promoted. They are produced with a pseudorandom number generator(PRNG), which is a kind of algorithm. If a random number as a seed is input, a generator can produce a sequence of numbers that can be nearly seen as random ones. 
+For disadvantages above, the idea of pseudorandom numbers are promoted. They are produced with a pseudorandom number generator(PRNG), which is a kind of algorithm. If a random number as a seed is input, a generator can produce a sequence of numbers that can be nearly seen as random ones. This way is efficient and doesn't need any devices. Meanwhile, it is replicable if the seed is available. 
+
+In this report, we will focus on the pseudorandom numbers generators and some ways to test their randomness. 
 
 %-----------Mainbody-----------------
+
+\section{Theorem}
+
+\subsection{Principle of PRNG}
+
+A pseudorandom number generator, or PRNG, is any program, or function, which uses math to simulate randomness. The math can sometimes be complex, but in general, using a PRNG requires only two steps:
+
+\begin{enumerate}
+	
+	\item Provide the PRNG with an arbitrary seed.
+	
+	\item Ask for the next random number.
+
+\end{enumerate}
+
+Let $f(x)$ be a function as a PRNG. Take $x_{0}$ arbitrarily as a seed. Then
 
 %-----------Conclusion---------------
 
 %-----------reference----------------
 
 %https://www.freecodecamp.org/news/a-brief-history-of-random-numbers-9498737f5b6c/
+
+%https://www.computerhope.com/jargon/p/pseudo-random.htm
 
 %-----------appendix-----------------
 
